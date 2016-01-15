@@ -1,0 +1,11 @@
+Returned:  Hello World! I am 0 of 2
+Returned:  Hello World! I am 1 of 2
+Rank 0 [Fri Jan 15 11:08:28 2016] [c0-0c2s5n1] Fatal error in MPI_Send: Invalid tag, error stack:
+MPI_Send(186): MPI_Send(buf=0x139d1c0, count=2, MPI_INT, dest=1, tag=5000000, comm=0x84000001) failed
+MPI_Send(111): Invalid tag, value is 5000000
+Rank 1 [Fri Jan 15 11:08:28 2016] [c0-0c2s5n2] Fatal error in MPI_Recv: Invalid tag, error stack:
+MPI_Recv(199): MPI_Recv(buf=0x139b0f0, count=2, MPI_INT, src=0, tag=5000000, comm=0x84000001, status=0x7fffffff6b98) failed
+MPI_Recv(118): Invalid tag, value is 5000000
+srun: error: nid00149: task 0: Aborted
+srun: Terminating job step 950236.0
+srun: error: nid00150: task 1: Aborted
